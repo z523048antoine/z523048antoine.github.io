@@ -1,40 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Antoine Cadeau</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    
+    <section id="profile" class="profile-section">
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-photo">
+        <h1>Antoine Cadeau</h1>
+        <h4>Fourth year student at EPITECH</h4>
+        <a href="#contact" class="contact-button">Contact Me</a>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hey it's me.</p>
-  </section>
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Hello everyone! I am <b class="purple">Antoine Cadeau</b>, a fourth-year student at EPITECH, a <b class="purple">computer science expertise</b> school located in Toulouse.
+                    <br />
+                    Here, I developed my <b class="purple">soft skills</b> and my <b class="purple">professional skills</b>.
+                    <br />
+                    <br />
+                    After following an <b class="purple">agile development training</b>, I greatly <b class="purple">improved my work</b> (both in teams and independently), 
+                    better <b class="purple">managed the time</b> required for each project, and thus <b class="purple">adapted</b> to the client's needs.
+                </p>
+                <p class="quote">
+                    "To succeed, work hard, never give up, and above all, cherish a magnificent obsession."<br>
+                    <span class="quote-author">Walt Disney</span>
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/about.png" alt="PersonOnDesk">
+            </div>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Here are my projects.</p>
-  </section>
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        
+        <div class="skills-subsection">
+            <h3>Programming Languages</h3>
+            <div class="skills-grid">
+                <div class="skill"><i class="fas fa-code"></i> HTML</div>
+                <div class="skill"><i class="fas fa-code"></i> CSS</div>
+                <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+                <div class="skill"><i class="fab fa-react"></i> React</div>
+                <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="skill"><i class="fab fa-python"></i> Python</div>
+                <div class="skill"><i class="fas fa-c"></i> C</div>
+                <div class="skill"><i class="fas fa-cplusplus"></i> C++</div>
+            </div>
+        </div>
+        
+        <div class="skills-subsection">
+            <h3>Technologies</h3>
+            <div class="skills-grid">
+                <div class="skill"><i class="fab fa-linux"></i> Linux</div>
+                <div class="skill"><i class="fas fa-terminal"></i> Powershell</div>
+                <div class="skill"><i class="fas fa-code"></i> Visual Studio Code</div>
+                <div class="skill"><i class="fab fa-git"></i> Git</div>
+                <div class="skill"><i class="fab fa-microsoft"></i> Microsoft Teams</div>
+                <div class="skill"><i class="fab fa-discord"></i> Discord</div>
+                <div class="skill"><i class="fas fa-jira"></i> Jira</div>
+                <div class="skill"><i class="fab fa-figma"></i> Figma</div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>You can call me on that number 080 0000 0000 or you can just call me "My love !".</p>
-  </section>
+    <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <img src="images/OdiaLogo.png" alt="Odia Logo" class="enterprise-logo">
+            <h3>Mobile Development Intern</h3>
+            <p><b class="purple">Odia</b> · Internship<br>
+               Apr 2023 - Aug 2023<br>
+               Toulouse, Occitanie, France
+            </p>
+        </div>
+        <div class="experience-item">
+            <img src="images/UE.png" alt="Unreal Engine Logo" class="enterprise-logo">
+            <h3>Developer</h3>
+            <p><b class="purple">Operation: Strike & Secure (OSS)</b> · Full-time<br>
+               Sep 2022 - Present<br>
+               Toulouse, Occitanie, France<br>
+               Video Game Development
+            </p>
+        </div>
+        <div class="experience-item">
+            <img src="images/MurmuLogo.png" alt="Murmuration logo" class="enterprise-logo">
+            <h3>Data Engineering Intern</h3>
+            <p><b class="purple">Murmuration</b> · Internship<br>
+               Oct 2022 - Mar 2023<br>
+               Toulouse, Occitanie, France<br>
+               Programming, Web Development
+            </p>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2022 Antoine Cadeau. All rights reserved.</p>
-  </footer>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p><i class="fas fa-envelope"></i> z523048@shibaura-it.ac.jp</p>
+        <p><i class="fas fa-phone"></i> 080 9290 0699</p>
+        <p><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</p>
+        <a href="https://www.linkedin.com/in/antoinecadeau" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+    </section>
+
+    <footer>
+        © 2024 Antoine Cadeau. All rights reserved.
+    </footer>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
